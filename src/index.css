@@ -1,0 +1,365 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+a {
+	text-decoration: none;
+}
+
+.list-style-none {
+	list-style: none;
+}
+
+/* utility */
+/* tags */
+a {
+	color: inherit;
+}
+.w-250px {
+	max-width: 250px;
+}
+.overflow-ellipsis {
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.overflow-break {
+	white-space: break-spaces;
+}
+.overflow-auto {
+	overflow: auto;
+}
+.pointer {
+	cursor: pointer;
+}
+.flex {
+	display: flex;
+}
+.flex-column {
+	flex-direction: column;
+}
+.flex1 {
+	flex: 1;
+}
+.flex-end {
+	justify-content: flex-end;
+}
+.align-end {
+	align-items: flex-end;
+}
+.text-center {
+	text-align: center;
+}
+.space-between {
+	justify-content: space-between;
+}
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box-line-left-spacer {
+	border-left: 5px solid #da8529;
+	padding-left: 30px;
+}
+.MuiFormHelperText-root {
+	margin-left: 0;
+}
+.mt-10 {
+	margin-top: 10px !important;
+}
+.container-x {
+	padding-top: 58px;
+	padding-bottom: 48px;
+}
+@media (min-width: 1200px) {
+	.container-x {
+		max-width: 100%;
+		padding-left: 94px;
+		padding-right: 94px;
+	}
+}
+
+/* margin utilites  */
+.mb-1 {
+	margin-bottom: 8px;
+}
+.mr-20 {
+	margin-right: 20px;
+}
+.mr-16 {
+	margin-right: 16px;
+}
+.mr-10 {
+	margin-right: 10px;
+}
+.mt-20 {
+	margin-top: 5rem /* 80px */;
+}
+
+/* padding */
+.p-0 {
+	padding: 0;
+}
+.pr-0 {
+	padding-right: 0 !important;
+}
+
+/* display */
+.display-inline-flex {
+	display: inline-flex;
+}
+@media (max-width: 900px) {
+	.md-d-none {
+		display: none;
+	}
+}
+
+/* admin dashboard css  */
+.team-card {
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	border: 1px solid #f5f5f5;
+	background: #f5f5f5;
+	padding: 18px 17px 20px 17px;
+}
+
+.box-border-light {
+	border-radius: 4px;
+	border: 1px solid #e0e0e0;
+	padding: 30px;
+}
+.package-box {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	border: 1px solid #06225c;
+	border-radius: 6px;
+	padding: 20px;
+}
+
+.MuiSelect-multiple {
+	gap: 5px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.MuiMenuItem-root {
+	white-space: break-spaces;
+}
+.select-menu-item {
+	background: #bfc7de;
+	padding: 3px 5px;
+	border-radius: 4px;
+}
+
+.owl-carousel .owl-stage {
+	padding-bottom: 10px;
+}
+
+/* site header  */
+.header-list-item {
+	padding: 4px 8px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 0px;
+	cursor: pointer;
+}
+@media (min-width: 825px) {
+	.lg-border-left,
+	.lg-border-right {
+		position: relative;
+	}
+	.lg-border-left::after {
+		content: '';
+		position: absolute;
+		height: 400%;
+		width: 1px;
+		left: 1px;
+		top: -150%;
+		z-index: 100;
+		background: #e0e0e0;
+	}
+	.lg-border-right::after {
+		content: '';
+		position: absolute;
+		height: 400%;
+		width: 1px;
+		right: 0;
+		top: -150%;
+		z-index: 100;
+		background: #e0e0e0;
+	}
+	.lg-border-right-20::after {
+		right: -20px;
+	}
+}
+.header-btn-yellow {
+	background: #e1ab3b;
+	padding: 10px 16px !important;
+	border-radius: 30px;
+	color: white;
+	text-decoration: none;
+}
+.list-20 li {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* home  */
+.home.hero-bg {
+	background: url(../public/assets/home-hero-bg.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 90vh;
+	display: flex;
+	align-items: center;
+}
+.background-blend {
+	position: relative;
+}
+.background-blend::before {
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	mix-blend-mode: multiply;
+	z-index: -1;
+}
+.before\:background-pink::before {
+	background-color: #e6e9f1;
+}
+.before\:background-pink-light::before {
+	background-color: rgba(230, 233, 241, 0.4);
+}
+.before\:background-yellow::before {
+	background-color: #e1ab3b;
+}
+.before\:background-blue::before {
+	background-color: #06225C;
+}
+
+/* our-science */
+.our-science-bg {
+	background-image: url('../public/assets/our-science-bg.png');
+}
+.our-science .hero {
+	text-align: center;
+	padding: 100px 10px 70px 10px;
+}
+.our-science .hero:nth-child(1) {
+	margin: auto;
+}
+.our-science .list-container {
+	background: rgba(230, 233, 241, 0.4);
+	padding: 45px 28px;
+	border-top-left-radius: 150px;
+	border-bottom-left-radius: 150px;
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	margin-bottom: 65px;
+	position: relative;
+}
+.our-science .list-container:last-child {
+	margin-bottom: 150px;
+}
+.our-science .list-container::after {
+	position: absolute;
+	content: '';
+	left: 100%;
+	top: 0;
+	bottom: 0;
+	width: 50vw;
+	background: rgba(230, 233, 241, 0.4);
+}
+.our-science .list-container .counter {
+	color: white;
+	height: 105px;
+	width: 105px;
+	padding: 25px;
+	background-color: #06225c;
+	border: 4px solid #e1ab3b;
+	border-radius: 50%;
+	font-size: 70px;
+	line-height: 46px;
+	text-align: center;
+}
+
+.icon-list-rotate-container {
+	display: flex;
+	gap: 40px;
+	overflow: hidden;
+}
+
+.icon-list-rotate-container img:nth-child(4n + 1) {
+	transform: rotate(0);
+}
+.icon-list-rotate-container img:nth-child(4n + 2) {
+	transform: rotate(-45deg);
+}
+.icon-list-rotate-container img:nth-child(4n + 3) {
+	transform: rotate(-135deg);
+}
+.icon-list-rotate-container img:nth-child(4n + 4) {
+	transform: rotate(110deg);
+}
+
+@media (max-width: 900px) {
+	.our-science .list-container {
+		flex-direction: column;
+		border-top-left-radius: 200px;
+		border-top-right-radius: 200px;
+		border-bottom-left-radius: 0;
+	}
+	.our-science .list-container > div {
+		width: 100%;
+		text-align: center;
+	}
+	.our-science .list-container::after {
+		display: none;
+	}
+}
+
+/* common  */
+.common-bg {
+	background-image: url('../public/assets/our-science-bg.png');
+}
+
+.video-player {
+	width: 80%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 9999;
+}
+video:focus {
+	outline: none;
+}
+.popup-video-player__close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.bact-white-list-icons {
+	width: 100%;
+	height: 25px;
+	background-image: url('../public/assets/bact-white-list.svg');
+	background-repeat: space;
+	margin-top: 24px;
+}

@@ -1,0 +1,156 @@
+/* margin utilites  */
+.mb-4 {
+	margin-bottom: 1rem /* 16px */;
+}
+@media (min-width: 768px) {
+	.md\:mb-0 {
+		margin-bottom: 0px;
+	}
+}
+.mr-4 {
+	margin-right: 1rem /* 16px */;
+}
+.mb-8 {
+	margin-bottom: 2rem /* 32px */;
+}
+.mt-20 {
+	margin-top: 5rem /* 80px */;
+}
+.mb-\[10px\] {
+	margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+	.md\:pb-14 {
+		padding-bottom: 3.5rem /* 56px */;
+	}
+	.md\:mb-14 {
+		margin-bottom: 3.5rem /* 56px */;
+	}
+}
+
+/* height */
+.min-h-screen {
+	min-height: 100vh;
+}
+@media (min-width: 768px) {
+	.md\:h-56 {
+		height: 14rem /* 224px */;
+	}
+}
+.max-w-\[224px\] {
+	max-width: 224px;
+}
+
+/* width */
+.max-w-\[224px\] {
+	max-width: 224px;
+}
+@media (min-width: 768px) {
+	.md\:w-56 {
+		width: 14rem /* 224px */;
+	}
+	.md\:w-9\/12 {
+		width: 75%;
+	}
+}
+.w-full {
+	width: 100%;
+}
+@media (min-width: 768px) {
+	.md\:w-auto {
+		width: auto;
+	}
+}
+
+/* border */
+.hover\:border-2:hover {
+	border-width: 2px;
+}
+@media (min-width: 768px) {
+	.md\:rounded-l-\[150px\] {
+		border-top-left-radius: 150px;
+		border-bottom-left-radius: 150px;
+	}
+}
+.rounded-t-\[150px\] {
+	border-top-left-radius: 150px;
+	border-top-right-radius: 150px;
+}
+@media (min-width: 768px) {
+	.md\:rounded-tr-none {
+		border-top-right-radius: 0px;
+	}
+}
+
+/* padding */
+.py-\[100px\] {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.py-6 {
+	padding-top: 1.5rem /* 24px */;
+	padding-bottom: 1.5rem /* 24px */;
+}
+.px-5 {
+	padding-left: 1.25rem /* 20px */;
+	padding-right: 1.25rem /* 20px */;
+}
+.pb-10 {
+	padding-bottom: 2.5rem /* 40px */;
+}
+.pt-20 {
+	padding-top: 5rem /* 80px */;
+}
+@media (min-width: 768px) {
+	.md\:pt-24 {
+		padding-top: 6rem /* 96px */;
+	}
+}
+
+/* gap */
+.gap-8 {
+	gap: 2rem /* 32px */;
+}
+
+/* rounded */
+.rounded-full {
+	border-radius: 9999px;
+}
+
+/* overflow */
+.overflow-hidden {
+	overflow: hidden;
+}
+
+/* flex  */
+.flex-col {
+	flex-direction: column;
+}
+@media (min-width: 768px) {
+	.md\:flex-row {
+		flex-direction: row;
+	}
+}
+
+/* text align  */
+.text-center {
+	text-align: center;
+}
+@media (min-width: 768px) {
+	.md\:text-left {
+		text-align: left;
+	}
+	.md\:text-right {
+		text-align: right;
+	}
+}
+
+/* text  */
+.text-\[18px\] {
+	font-size: 18px;
+}
+@media (min-width: 768px) {
+	.md\:text-\[22px\] {
+		font-size: 22px;
+	}
+}
